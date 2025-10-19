@@ -1,0 +1,19 @@
+[project]
+name = 'media-reef-atelier'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.media-reef-atelier]
+path = 'contracts/media-reef-atelier.clar'
+clarity_version = 2
+epoch = 2.4
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
